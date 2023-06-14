@@ -1,0 +1,19 @@
+.navbar {
+  background-color: white; /* Set the background color */
+  border: solid;
+  border-color: hsl(123, 78%, 47%);
+  height: 100vh;
+}
+
+.nav-link {
+  color: black; /* Set the text color */
+}
+.nav-link:hover {
+  color: hsl(153, 78%, 47%);/* Set the text color */
+}
+
+.rounded-image {
+  border-radius: 50%;
+  width: 40px; /* Adjust the width as needed */
+  height: 40px; /* Adjust the height as needed */
+}
