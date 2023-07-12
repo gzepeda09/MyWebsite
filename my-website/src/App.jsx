@@ -1,12 +1,12 @@
-import Body from './components/body.jsx'
-import NavBar from './components/navbar.jsx'
+import Main from './components/Main.jsx'
+
 
 function App() {
 
   return (
     <>
       {/*<NavBar />*/}
-      <Body />
+      <Main />
     </>
   )
 }

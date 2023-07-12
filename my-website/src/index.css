@@ -1,0 +1,9 @@
+body {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  background-color: #DFDBDB;
+}
+
+@font-face {
+  font-family: 'name';
+  src: local('name'), url('./fonts/name.ttf') format('truetype');
+}

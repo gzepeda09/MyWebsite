@@ -1,0 +1,54 @@
+.card1 {
+	height: 60vh;
+	background-color: #FCF6F5;
+}
+
+
+
+.imbg {
+	background-color: #FCF6F5;
+
+	height: max(60vh, 30vh);
+	margin-inline: 3%;
+	position: relative;
+}
+.parent {
+  position: relative;
+
+}
+
+.float-right {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.float-left {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.imghold {
+
+	height: max(60vh, 30vh);
+}
+
+.arrRight {
+
+	position: relative;
+
+	left: 0vh;
+}
+
+.arrLeft {
+
+	position: relative;
+
+	right: 0vh;
+}
+
+.curs {
+	cursor: pointer;
+}

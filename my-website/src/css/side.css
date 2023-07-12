@@ -1,0 +1,15 @@
+h1 {
+
+	font-size: 6vh;
+	font-family: 'name';
+	color: #FCF6F5;
+
+}
+
+.side{
+
+	height: 100%;
+	position: fixed;
+	background-color: #990011;
+	left: 0;
+}
