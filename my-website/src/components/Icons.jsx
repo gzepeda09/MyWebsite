@@ -6,6 +6,7 @@ import { MDBTypography, MDBIcon } from 'mdb-react-ui-kit'
 import styled from 'styled-components'
 import About from "./About.jsx"
 import Side from "./Sidebar.jsx"
+import Projects from "./Projects.jsx"
 import "../css/navbar.css"
 
 export default function Icons() {
@@ -77,7 +78,7 @@ export default function Icons() {
 		  		}
 
 		  		{mode === "projects" &&
-		  			<h1 className="abt"> Projects </h1>
+		  			<Projects />
 		  		}
 		  		
 		  		{mode === "intern" &&

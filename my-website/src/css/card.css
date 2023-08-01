@@ -1,8 +1,41 @@
-.card1 {
+/*.card1 {
 	height: 60vh;
 	background-color: #FCF6F5;
 }
 
+.pcard {
+	height: max(30vh, 10vh);
+	width: max(20vw, 10vw);
+	background-color: #FCF6F5;
+}
+.img-fluid {
+	background-size: ;
+}
+
+
+.ctent {
+
+	font-family: name;
+	font-size: min(25vh, 1.875em);
+	flex: 0;
+}
+
+.reSze {
+	flex: 1;
+}
+
+.offIm {
+	position: absolute;
+	top: 20vh;
+	left: 50vh;
+	width: calc(90% + 50dvh); 
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	z-index: -1
+	flex: 1;
+
+}
 
 
 .imbg {
@@ -14,6 +47,9 @@
 }
 .parent {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 
 }
 
@@ -51,4 +87,113 @@
 
 .curs {
 	cursor: pointer;
+}
+.cnt{
+	margin: auto;
+}
+*/
+.card1 {
+  background-color: #FCF6F5;
+
+}
+
+.pcard {
+  width: max(20vw, 10vw);
+  background-color: #990011;
+  position: relative;
+  top: 0vh;
+  left: 70vh;
+  transform: translateX(-50%);
+
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  flex: 1
+}
+
+.ttle {
+	color: #990011;
+}
+
+.img-fluid {
+  background-size: cover;
+  border: solid;
+  border-radius: 2vh;
+  border-color: #990011;
+}
+
+.ctent {
+  font-family: name;
+  font-size: min(25vh, 1.875em);
+  flex: 0;
+  color: #FCF6F5;
+}
+
+.reSze {
+  flex: 1;
+}
+
+.offIm {
+  position: absolute;
+  top: 0vh;
+  left: 50vh;
+  transform: translateX(-50%);
+  width: calc(50% + 25vh);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  flex: 1;
+}
+
+
+.imbg {
+  background-color: #FCF6F5;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 30vh; /* Set a minimum height to ensure it doesn't collapse completely */
+}
+
+.parent {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh; /* Use min-height instead of height to allow content expansion */
+}
+
+.curs {
+  cursor: pointer;
+}
+
+/* Additional styles for arrows positioning */
+
+.float-right {
+  position: absolute;
+  top: 50%;
+  right: -15vh;
+  transform: translateY(-50%);
+}
+
+.float-left {
+  position: absolute;
+  top: 50%;
+  left: -4vh;
+  transform: translateY(-50%);
+}
+
+.arrRight {
+  position: relative;
+  left: 0vh;
+}
+
+.arrLeft {
+  position: relative;
+  right: 0vh;
+}
+
+.cnt {
+  margin: auto;
 }
