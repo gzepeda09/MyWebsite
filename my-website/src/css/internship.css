@@ -1,0 +1,126 @@
+.txtColor {
+	color: #990011;
+	
+}
+.headBord{
+	border-bottom: solid;
+	color: #993b00;
+}
+.chevCard {
+	border: solid;
+	border-color: #990011;
+
+	width: 50vw;
+}
+
+.expCard {
+	border: solid;
+	border-color: #990011;
+	
+
+	width: 60vw;
+	height: 100vh;
+	position: relative;
+	top: 0%;
+	bottom: 0%;
+	left: 5%;
+	right: 0%;
+	margin-bottom: 5%;
+
+
+}
+
+.bgDCard{
+	margin-right: auto;
+	margin-left: auto;
+	width: 100%;
+	box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
+	height: 30vh;
+	border-radius: 5px;
+	backdrop-filter: blur(14px);
+	background-color: rgba(153, 59, 0, 0.135);
+	padding: 10px;
+	text-align: center;
+}
+
+.fnts{
+	color: #990011;
+}
+
+
+.chevIm {
+	height:75%;
+	width:75%;
+}
+
+.arrOh{
+	color: #FCF6F5;
+	margin-top: -25%;
+}
+.ptn {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+
+
+@media (max-width: 800px) {
+	.chevCard {
+		border: solid;
+		border-color: #990011;
+		width: 25vw;
+		
+	}
+	.bg {
+		
+		height: 60vh;
+		width: 60vw;
+	}
+}
+
+
+
+
+@media (orientation: portrait) {
+	.chevCard {
+		border: solid;
+		border-color: #990011;
+		width: 25vw;
+		height: 25vh;
+		
+	}
+	.bg {
+		
+		height: 60vh;
+		width: 60vw;
+	}
+
+
+	.expCard {
+		width: 70vw;
+		height: 50vh;
+	}
+
+	.txtColor {
+		color: #990011;
+		font-size: 1em;
+		
+	}
+	.fnts{
+		color: #990011;
+		font-size: 1em;
+	}
+
+}
+
+
+.bg {
+	
+
+	width: 50vw;
+}
+
+.cfoot {
+	background-color: #990011;
+	height: 7vh;
+}

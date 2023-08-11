@@ -7,6 +7,7 @@ import styled from 'styled-components'
 import About from "./About.jsx"
 import Side from "./Sidebar.jsx"
 import Projects from "./Projects.jsx"
+import Internship from "./Internship.jsx"
 import "../css/navbar.css"
 
 export default function Icons() {
@@ -82,7 +83,7 @@ export default function Icons() {
 		  		}
 		  		
 		  		{mode === "intern" &&
-		  			<h1 className="abt"> Internships</h1>
+		  			<Internship />
 		  		}
 
 		  		{mode === "info" &&

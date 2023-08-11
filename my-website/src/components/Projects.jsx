@@ -114,7 +114,7 @@ export default function Projects() {
 
 
 	return (
-		<Container>
+		<Container fluid>
 
 
 		<Row>
@@ -132,7 +132,7 @@ export default function Projects() {
 		<Row>
 
 
-			<Col className="mx-5">
+			<Col xs={8} sm={12} md={11} className="mx-5">
 
 				<div className="d-flex justify-content-center parent mt-5" >
 
@@ -169,11 +169,13 @@ export default function Projects() {
 
 
 											<Row className="d-flex justify-content-center">
+
 											<motion.div initial={{opacity: 0,
 																		y: -2000}} 
-														animate={{y: viewportWidth > 1724 ? viewportHeight - 850 : viewportHeight - 500,
+														animate={{y: viewportWidth > 1724 ? viewportHeight - 850 : viewportHeight > 2000 ? viewportHeight - 100 : viewportHeight - 500,
 																  x: viewportWidth > 1724 ? viewportWidth - 2250 : currIndex >= 1 ? viewportWidth - 1480 : viewportWidth < 1000 ? viewportWidth - 1200 : viewportWidth - 1400,
 																  opacity: 1}}				>
+											
   			             					<Col md={1} className="d-flex justify-content-center ">
   			    					      	
   			    					      		<motion.span className="curs" whileHover= {{scale: 1.5 }} onClick={() => handleNext(0) } >
@@ -241,6 +243,7 @@ export default function Projects() {
   		      						      		</motion.span>
 
   		      						      	</Col>
+  		      						      
   		      						    </motion.div>
 
 
