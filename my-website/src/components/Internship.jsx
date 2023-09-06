@@ -16,6 +16,14 @@ export default function Internship() {
 	const handleExpand = () => {
 		setDoExpand(!doExpand);
 		setIsDraggable(false);
+		setDoExpandBLM(false);
+	}
+
+
+	const handleBLMExpand = () => {
+		setDoExpandBLM(!doExpandBLM);
+		setDoExpand(false);
+		
 	}
 
 	const constraints = {
@@ -24,6 +32,14 @@ export default function Internship() {
 	  bottom: 0,
 	  left: 0,
 	};
+
+	setTimeout(() => {
+	  if(currIndex === 2){
+	  	 setCurrIndex(0);
+	  } else {
+	  	setCurrIndex(currIndex + 1);
+	  }
+	}, 10000);
 
 
 	console.log(doExpand);
@@ -46,7 +62,7 @@ export default function Internship() {
 
 							<motion.div className="bg" drag={isDraggable} dragConstraints={constraints}  dragTransition={{ bounceStiffness: 600, bounceDamping: 20 }}
                 dragElastic={{top:0, bottom:0, right: 0.5, left:0.5 }}>
-								<Card className={ doExpand ? "expCard" : "chevCard"} >
+								<Card className={ doExpand ? "expCard" : "chevCard"} style={currIndex === 1 ? doExpand ? { height: "120vh" } : null : null}>
 
 
 
@@ -56,7 +72,7 @@ export default function Internship() {
 												<Col xs={12} sm={12} md={11} lg={11} >
 													<h1 className="txtColor"> 
 
-														Chevron SURE
+														Chevron SURE - (SUMMER 2022)
 
 													</h1>
 												</Col>
@@ -93,7 +109,7 @@ export default function Internship() {
 												<Row className="mt-3">
 													<Col xs={6} sm={6} md={6} lg={6}>
 														
-														<Card className="bgDCard">
+														<Card className="bgDCard" >
 
 															<Card.Title>
 															<h1 className="fnts">Description</h1>
@@ -152,20 +168,85 @@ export default function Internship() {
 
 					<Col > 
 					<AnimatePresence>
-					<motion.div whileHover={{ scale: 1.2 }} whileTap={{scale: 1}} key={1} >
-						<Card className={ doExpandBLM ? null : "chevCard"}>
+					
+						<Card className={ doExpandBLM ? "expCard" : "chevCard"}>
 
-							<Card.Title> 
+							<Card.Title className="headBord"> 
 								<h1 className="txtColor"> 
 
-									BLM 
+									BLM - (SUMMER 2023)
 
 								</h1>
 							</Card.Title>
 
-						</Card>
+
+							{
+										doExpandBLM && 
+
+										<Card.Body>
+
+											<Container>
+
+												<Row>
+													<Col xs={12} sm={12} md={12} lg={12}>
+														<motion.div className="d-flex justify-content-center">  <Image src={chevImg[currIndex].url} fluid className="chevIm "  />
+														</motion.div>
+													</Col>
+												</Row>
+
+												<Row className="mt-3">
+													<Col xs={6} sm={6} md={6} lg={6}>
+														
+														<Card className="bgDCard">
+
+															<Card.Title>
+															<h1 className="fnts">Description</h1>
+															</Card.Title>
+
+
+															<div className="blur"> </div>
+														</Card>
+														
+													</Col>
+
+													<Col xs={6} sm={6} md={6} lg={6}>
+														<Card className="bgDCard">
+
+															<Card.Title>
+															<h1 className="fnts">What I did</h1>
+															</Card.Title>
+
+
+															<div className="blur"> </div>
+														</Card>
+													</Col>
+
+												</Row>
+
+
+											</Container>
+
+
+										</Card.Body>
+
+									}
+
+
+						<Card.Footer className="d-flex justify-content-center mt-auto cfoot">
+						<AnimatePresence>
+						<motion.div  whileHover={{ scale: 1.5, cursor: "pointer"}} whileTap={{scale: 1}}>
+
+						{ doExpandBLM ? <ChevronCompactUp size={30}  className="arrOh " onClick={() => handleBLMExpand()}/ > : <ChevronCompactDown onClick={() => handleBLMExpand()} size={30} className="arrOh " /> }
 
 						</motion.div>
+						</AnimatePresence>
+						</Card.Footer>
+
+
+						</Card>
+
+
+				
 						</AnimatePresence>
 					</Col>
 
